@@ -1,0 +1,67 @@
+/* style.css - Eenvoudige, schone stijlen voor het portfolio */
+
+:root{
+  --bg: #f2f4f8;
+  --card: #ffffff;
+  --accent: #0b62d6;
+  --muted: #6b7280;
+  --text: #0f172a;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+header{
+  background:var(--card);
+  padding:20px 16px;
+  text-align:center;
+  box-shadow:0 1px 4px rgba(16,24,40,0.04);
+}
+header h1{margin:0; font-size:20px}
+header p{margin:6px 0 0; color:var(--muted); font-size:14px}
+
+main{max-width:900px; margin:24px auto; padding:0 16px}
+
+.section{
+  background:var(--card);
+  padding:16px;
+  border-radius:8px;
+  margin-top:16px;
+  box-shadow:0 1px 6px rgba(16,24,40,0.04);
+}
+
+h2{margin:0 0 10px; font-size:18px}
+
+.skills span{
+  display:inline-block;
+  background:#eef2ff;
+  color:var(--text);
+  padding:6px 10px;
+  margin:6px 6px 0 0;
+  border-radius:999px;
+  font-size:13px;
+}
+
+ul{padding-left:18px; margin:0}
+li{margin:6px 0}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:20px 16px 40px;
+  font-size:14px;
+}
+
+/* Kleine responsieve aanpassingen */
+@media (min-width:700px){
+  header h1{font-size:24px}
+  header p{font-size:15px}
+}
